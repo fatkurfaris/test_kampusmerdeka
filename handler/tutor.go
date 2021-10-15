@@ -1,10 +1,10 @@
 package handler
 
 import (
-	"banking_crowd/helper"
-	"banking_crowd/models/tutors"
-	"banking_crowd/service"
 	"net/http"
+	"ruang_belajar/helper"
+	"ruang_belajar/models/tutors"
+	"ruang_belajar/service"
 
 	"github.com/gin-gonic/gin"
 )

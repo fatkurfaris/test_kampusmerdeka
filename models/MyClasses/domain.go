@@ -1,7 +1,7 @@
 package myclasses
 
 import (
-	"banking_crowd/models/classes"
+	"ruang_belajar/models/classes"
 	"time"
 
 	"gorm.io/gorm"

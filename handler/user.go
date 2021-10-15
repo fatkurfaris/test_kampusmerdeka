@@ -1,12 +1,12 @@
 package handler
 
 import (
-	"banking_crowd/auth"
-	"banking_crowd/helper"
-	"banking_crowd/models/learners"
-	"banking_crowd/models/tutors"
-	"banking_crowd/service"
 	"net/http"
+	"ruang_belajar/auth"
+	"ruang_belajar/helper"
+	"ruang_belajar/models/learners"
+	"ruang_belajar/models/tutors"
+	"ruang_belajar/service"
 	"strconv"
 
 	"github.com/gin-gonic/gin"

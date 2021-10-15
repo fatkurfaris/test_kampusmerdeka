@@ -1,7 +1,7 @@
 package classes
 
 import (
-	"banking_crowd/models/tutors"
+	"ruang_belajar/models/tutors"
 	"time"
 
 	"gorm.io/gorm"

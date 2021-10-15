@@ -1,8 +1,8 @@
 package service
 
 import (
-	myclasses "banking_crowd/models/MyClasses"
-	"banking_crowd/repository/database"
+	myclasses "ruang_belajar/models/MyClasses"
+	"ruang_belajar/repository/database"
 )
 
 type MyClassService interface {

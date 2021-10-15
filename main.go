@@ -1,17 +1,17 @@
 package main
 
 import (
-	"banking_crowd/auth"
-	"banking_crowd/handler"
-	myclasses "banking_crowd/models/MyClasses"
-	"banking_crowd/models/articles"
-	"banking_crowd/models/classes"
-	"banking_crowd/models/learners"
-	"banking_crowd/models/tutors"
-	"banking_crowd/repository/database"
-	"banking_crowd/repository/drivers/mysql"
-	"banking_crowd/service"
 	"log"
+	"ruang_belajar/auth"
+	"ruang_belajar/handler"
+	myclasses "ruang_belajar/models/MyClasses"
+	"ruang_belajar/models/articles"
+	"ruang_belajar/models/classes"
+	"ruang_belajar/models/learners"
+	"ruang_belajar/models/tutors"
+	"ruang_belajar/repository/database"
+	"ruang_belajar/repository/drivers/mysql"
+	"ruang_belajar/service"
 
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
@@ -38,11 +38,11 @@ func DbMigrate(db *gorm.DB) {
 
 func main() {
 	mysqlConfig := mysql.ConfigDb{
-		DbUser:     viper.GetString(`databases.mysql.user`),
-		DbPassword: viper.GetString(`databases.mysql.password`),
-		DbHost:     viper.GetString(`databases.mysql.host`),
-		DbPort:     viper.GetString(`databases.mysql.port`),
-		DbName:     viper.GetString(`databases.mysql.dbname`),
+		DB_Username: viper.GetString(`databases.mysql.user`),
+		DB_Password: viper.GetString(`databases.mysql.password`),
+		DB_Host:     viper.GetString(`databases.mysql.host`),
+		DB_Port:     viper.GetString(`databases.mysql.port`),
+		DB_Database: viper.GetString(`databases.mysql.dbname`),
 	}
 
 	db := mysqlConfig.InitialDb()
@@ -88,7 +88,7 @@ func main() {
 	api.POST("/classes", authMiddleware, tutor, classHandler.CreateClass)
 	api.GET("/classes", authMiddleware, classHandler.GetAll)
 
-	api.POST("/myclasses", authMiddleware, tutor, myclassHandler.CreateMyClass)
+	api.POST("/myclasses", authMiddleware, learner, myclassHandler.CreateMyClass)
 	api.GET("/myclasses", authMiddleware, learner, myclassHandler.GetAllMyClass)
 
 	api.POST("/articles", authMiddleware, tutor, articleHandler.CreateArticle)

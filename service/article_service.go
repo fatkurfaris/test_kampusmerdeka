@@ -1,9 +1,9 @@
 package service
 
 import (
-	"banking_crowd/models/articles"
-	"banking_crowd/repository/database"
 	"errors"
+	"ruang_belajar/models/articles"
+	"ruang_belajar/repository/database"
 )
 
 type ArticleService interface {

@@ -1,9 +1,9 @@
 package service
 
 import (
-	"banking_crowd/models/classes"
-	"banking_crowd/repository/database"
 	"errors"
+	"ruang_belajar/models/classes"
+	"ruang_belajar/repository/database"
 )
 
 type ClassService interface {

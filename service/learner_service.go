@@ -1,10 +1,10 @@
 package service
 
 import (
-	"banking_crowd/models/learners"
-	"banking_crowd/models/tutors"
-	"banking_crowd/repository/database"
 	"errors"
+	"ruang_belajar/models/learners"
+	"ruang_belajar/models/tutors"
+	"ruang_belajar/repository/database"
 
 	"golang.org/x/crypto/bcrypt"
 )

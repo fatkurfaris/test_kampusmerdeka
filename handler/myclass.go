@@ -1,11 +1,11 @@
 package handler
 
 import (
-	"banking_crowd/helper"
-	myclasses "banking_crowd/models/MyClasses"
-	"banking_crowd/models/learners"
-	"banking_crowd/service"
 	"net/http"
+	"ruang_belajar/helper"
+	myclasses "ruang_belajar/models/MyClasses"
+	"ruang_belajar/models/learners"
+	"ruang_belajar/service"
 
 	"github.com/gin-gonic/gin"
 )

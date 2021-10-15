@@ -1,7 +1,7 @@
 package database
 
 import (
-	"banking_crowd/models/tutors"
+	"ruang_belajar/models/tutors"
 
 	"gorm.io/gorm"
 )

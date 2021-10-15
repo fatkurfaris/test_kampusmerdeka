@@ -1,7 +1,7 @@
 package learners
 
 import (
-	myclasses "banking_crowd/models/MyClasses"
+	myclasses "ruang_belajar/models/MyClasses"
 	"time"
 
 	"gorm.io/gorm"
