@@ -1,9 +1,9 @@
 package auth
 
 import (
-	"banking_crowd/helper"
-	"banking_crowd/service"
 	"net/http"
+	"ruang_belajar/helper"
+	"ruang_belajar/service"
 	"strings"
 
 	"github.com/dgrijalva/jwt-go"
